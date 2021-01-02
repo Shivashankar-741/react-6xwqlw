@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import App from "./App";
-import UseEffect from "./useEffect";
+import UseRef from "./UseRef";
 
-ReactDOM.render(<UseEffect />, document.getElementById("root"));
+ReactDOM.render(<UseRef />, document.getElementById("root"));
