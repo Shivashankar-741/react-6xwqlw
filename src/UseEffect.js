@@ -22,7 +22,7 @@ const UseEffect = () => {
     <div>
       <h1>Hooks </h1>
       <p>
-        add one {addone} and add two {addtwo}
+        add one {addone} and addtwo {addtwo}
       </p>
 
       <button
