@@ -2,6 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import App from "./App";
-import Hooks from "./Hooks";
+import UseEffect from "./useEffect";
 
-ReactDOM.render(<Hooks />, document.getElementById("root"));
+ReactDOM.render(<UseEffect />, document.getElementById("root"));

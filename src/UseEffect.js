@@ -1,6 +1,6 @@
 import React from "react";
 
-const Hooks = () => {
+const UseEffect = () => {
   // const [value, setValue] = React.useState(0);
   // const [addtwo, setAddTwo] = React.useState(0);
 
@@ -43,4 +43,4 @@ const Hooks = () => {
   );
 };
 
-export default Hooks;
+export default UseEffect;
