@@ -12,11 +12,12 @@ const Hooks = () => {
 
   React.useEffect(() => {
     console.log("rendered");
+    // setAdd(prevState => ({ ...prevState, addone: 10 }));
     return () => {
       console.log("clean up");
       setAdd(prevState => ({ ...prevState, addone: 10 }));
     };
-  }, []);
+  }, [addtwo]);
   return (
     <div>
       <h1>Hooks </h1>
