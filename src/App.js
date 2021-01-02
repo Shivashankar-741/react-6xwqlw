@@ -6,16 +6,23 @@ export class App extends React.Component {
     super();
     this.state = {
       value: 1
+      // show: true
     };
     console.log("constructor ");
   }
 
   componentWillMount() {
-    console.log("component will mount");
+    this.setState({
+      value: 0
+    });
+    console.log("component will mount", this.state.value);
   }
 
   componentDidMount() {
-    console.log("Component did mount");
+    console.log("Component did mount", this.state.value);
+    this.setState({
+      value: 22
+    });
   }
 
   componentWillReceiveProps(nextProps) {
@@ -49,6 +56,7 @@ export class App extends React.Component {
           onClick={() =>
             this.setState({
               value: this.state.value + 1
+              // show: !this.state.show
             })
           }
         >
