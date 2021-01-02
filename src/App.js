@@ -7,7 +7,7 @@ export class App extends React.Component {
     this.state = {
       value: 1
     };
-    console.log("constructor");
+    console.log("constructor ");
   }
 
   componentWillMount() {
