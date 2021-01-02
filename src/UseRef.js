@@ -1,21 +1,21 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const UseRef = () => {
   // React useref allow us to store the data without re-reendering the component
   // instead of dom query selector we can also use the useref to access the dom elements
-  const storeRef = React.useRef(0);
 
-  console.log(storeRef.current);
+  const [name, setName] = useState("");
+  const renderCount = useRef(0);
 
-  React.useEffect(() => {
-    console.log("rendering the useEffect hooks");
-    storeRef.current = storeRef.current + 1;
+  useEffect(() => {
+    renderCount.current = renderCount.current + 1;
   });
+
   return (
     <>
-      <h1>UseRef</h1>
-      <button onClick={() => console.log("adsfsa")}>click</button>
-      {storeRef.current}
+      <input type="text" value={name} onChange={e => setName(e.target.value)} />
+      <p>{name}</p>
+      <p>render{renderCount.current}</p>
     </>
   );
 };
