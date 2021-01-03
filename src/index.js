@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./Context/App";
 
-import UseRef from "./UseRef";
+// import UseRef from "./UseRef";
 
-ReactDOM.render(<UseRef />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
